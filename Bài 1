@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+  int n;
+  long S;
+  S = 0;
+  printf("\nNhập vào số n: ");
+  scanf("%d", &n);
+ 
+  for(int i = 1; i <=n; i++)
+    {
+        S = S + i;
+    }
+  printf("\nTổng 1 + 2 + ... + %d là %ld: ", n, S);
+}
