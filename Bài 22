@@ -1,0 +1,44 @@
+#include <stdio.h>
+struct luanvan
+{
+    char  maluanvan[10];
+    char  tenluanvan[50];
+    char  hotensinhvien[30];
+    char  hotengiangvien[30];
+    unsigned short   namthuchien;
+};
+int main() {
+    struct luanvan Book1;
+    FILE *fptr;
+    fptr = fopen("C:\\users\\DELL\\Desktop\\docvaghiclion.txt", "w+");
+//
+    printf("Nhap ma luan van: \n");
+    scanf("%s",Book1.maluanvan);
+    printf("Nhap ten luan van: \n");
+    scanf("%s",Book1.tenluanvan);
+    printf("Nhap ho ten sinh vien thuc hien: \n");
+    scanf("%s",Book1.hotensinhvien);
+    printf("Nhap ho ten giang vien huong dan: \n");
+    scanf("%s",Book1.hotengiangvien);
+    printf("Nhap nam thuc hien: \n");
+    scanf("%d", &Book1.namthuchien);
+//
+    printf("\n");
+    printf("Ma luan van: ");
+    puts(Book1.maluanvan);
+    printf("Ten luan van: ");
+    puts(Book1.tenluanvan);
+    printf("Ho ten sinh vien thuc hien: ");
+    puts(Book1.hotensinhvien);
+    printf("Ho ten giang vien huong dan: ");
+    puts(Book1.hotengiangvien);
+    printf("Nam thuc hien: %d", Book1.namthuchien);
+//
+    fprintf(fptr, "%s\n",Book1.maluanvan);
+    fprintf(fptr, "%s\n",Book1.tenluanvan);
+    fprintf(fptr, "%s\n",Book1.hotensinhvien);
+    fprintf(fptr, "%s\n",Book1.hotengiangvien);
+    fprintf(fptr,"%d\n",Book1.namthuchien);
+    fclose(fptr);
+    return 0;
+}
