@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main()
+{
+	int S = 0;
+	int n = 0;
+	int N ; 
+	scanf("%d",&N);
+	while(S < N)
+	{
+		n++;
+		S = S + n;
+	}
+	printf("\nSo n la %d", n);
+	return 0;
+}
