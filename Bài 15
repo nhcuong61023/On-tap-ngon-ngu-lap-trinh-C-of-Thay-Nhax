@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int n ; 
+    int a ;
+     scanf("%d",&n );
+     a= sqrt(n);
+    for ( int i=1 ; i <a;i++){
+         printf("%d ",i*i);
+        }
+    }
+
