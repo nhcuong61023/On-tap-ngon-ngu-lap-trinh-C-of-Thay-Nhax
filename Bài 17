@@ -1,0 +1,27 @@
+#include <stdio.h>
+int sochan(int a){
+    for (int i=0;i<a;i++){
+        if (a== 2*i){
+            return 1;
+        }
+    }
+    return 0;
+}
+int main (){
+    int N;
+    int mang[100];
+    printf("nhap so phan tu n:");
+    scanf("%d",&N);
+    for(int i=0;i<N;i++){
+        printf("phan tu thu %d la",i);
+        scanf("%d",&mang[i]);
+    }
+    int kt =-1;
+    for(int i=0;i<N;i++){
+        if(sochan(mang[i])){
+            kt= mang[i];
+            break;
+        }
+}
+printf("%d ",kt);
+}
