@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main()
+{
+	int S = 0;
+	int n = 0;
+	while(S < 10000)
+	{
+		n++;
+		S = S + n;
+	}
+	printf("\nSo n la %d", n);
+	return 0;
+}
