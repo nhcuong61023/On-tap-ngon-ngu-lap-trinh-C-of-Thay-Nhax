@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+    int n,i;
+    float s= 0;
+    scanf("%d",&n);
+    for (i =1; s+i <n; ) {
+        i++;
+        s= s+i;
+    }
+    printf("ket qua la: %d",i);
+}
